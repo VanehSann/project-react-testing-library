@@ -17,7 +17,7 @@ import {
 
 
 
-// Criando minha branch e meu primeiro commit
+
 class App extends Component {
   static setIsPokemonFavoriteById() {
     const favoritePokemonIds = readFavoritePokemonIds();
