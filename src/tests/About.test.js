@@ -23,4 +23,3 @@ describe('Teste se a página contém as informações sobre a Pokédex', () => {
     expect(img.src).toContain(url);
   });
 });
-
