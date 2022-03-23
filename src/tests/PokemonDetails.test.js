@@ -4,6 +4,7 @@ import React from 'react';
 import App from '../App';
 import renderWithRouter from '../renderWithRouter';
 
+// erro no github
 describe('Teste o componente <PokemonDetails.js />', () => {
   test('Se as informações detalhadas do Pokémon selecionado', () => {
     renderWithRouter(<App />);
