@@ -77,6 +77,7 @@ describe('Teste o componente <Pokedex.js />', () => {
   test('Se a Pokédex tem os botões de filtro', () => {
     renderWithRouter(<App />);
     // const Fire = screen.getByText(/Fire/i);
+    // corrigindo commit
     const sete = 7;
     const data = screen.getAllByTestId('pokemon-type-button');
     expect(data).toHaveLength(sete);
