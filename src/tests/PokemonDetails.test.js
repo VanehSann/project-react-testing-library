@@ -18,7 +18,7 @@ describe('Teste o componente <PokemonDetails.js />', () => {
     // check outros
     const headingH2 = screen.getByRole('heading', { name: 'Summary' });
     expect(headingH2).toBeInTheDocument();
-    const summaryContent = screen.getAllbyText(/roasts hard berries with electricity/i);
+    const summaryContent = screen.getAllbyText(/electricity/i);
     expect(summaryContent).toHaveLength(1);
   });
   test('Se existe na página uma seção com os mapas', () => {
