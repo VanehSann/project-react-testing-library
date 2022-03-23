@@ -1,10 +1,10 @@
-import React from 'react';
 import PropTypes from 'prop-types';
-
+import React from 'react';
 import { isPokemonFavoriteByIdType, pokemonType } from '../types';
 import Pokemon from './Pokemon';
-
 import './pokemon-details.css';
+
+
 
 class PokemonDetails extends React.Component {
   static renderHabitat({ foundAt, name }) {
@@ -27,7 +27,7 @@ class PokemonDetails extends React.Component {
     return (
       <section>
         <h2>{ `Summary` }</h2>
-        <p>{ `${summary}` }</p>
+        <p data-testid="summaryContent">{ `${summary}` }</p>
       </section>
     );
   }
