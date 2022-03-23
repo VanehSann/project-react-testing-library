@@ -18,7 +18,7 @@ describe('Teste o componente <PokemonDetails.js />', () => {
     // check outros
     const headingH2 = screen.getByRole('heading', { name: 'Summary' });
     expect(headingH2).toBeInTheDocument();
-    const summaryContent = screen.getAllByText(/electricity/i);
+    const summaryContent = screen.getAllbyText(/electricity/i);
     expect(summaryContent).toHaveLength(1);
   });
   test('Se existe na página uma seção com os mapas', () => {
@@ -38,7 +38,7 @@ describe('Teste o componente <PokemonDetails.js />', () => {
     expect(pikachuLocation[1].src).toContain(url2);
 
     const pikachuText = screen
-      .getByText(/electricity/i);
+      .getByText(/with electricity to make them tender enough to eat./i);
     expect(pikachuText).toBeInTheDocument();
 
     const textoLocation = screen.getByText(/Kanto Viridian Forest/i);
