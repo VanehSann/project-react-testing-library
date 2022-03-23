@@ -11,7 +11,7 @@ describe('Teste se a página contém as informações sobre a Pokédex', () => {
     const h2 = screen.getByRole('heading', { name: 'About Pokédex' });
     expect(h2).toBeInTheDocument();
   });
- test('Se a página contém dois parágrafos com texto sobre a Pokédex.', () => {
+  test('Se a página contém dois parágrafos com texto sobre a Pokédex.', () => {
     render(<About />);
     const p = screen.getAllByText(/Pokémons/i);
     expect(p).toHaveLength(2);
@@ -23,3 +23,4 @@ describe('Teste se a página contém as informações sobre a Pokédex', () => {
     expect(img.src).toContain(url);
   });
 });
+
