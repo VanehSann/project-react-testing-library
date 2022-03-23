@@ -1,9 +1,6 @@
 import { render, screen } from '@testing-library/react';
-// import userEvent from '@testing-library/user-event';
 import React from 'react';
-// import App from '../App';
 import About from '../components/About';
-// import renderWithRouter from '../renderWithRouter';
 
 describe('Teste se a página contém as informações sobre a Pokédex', () => {
   test('Se a página contém um heading h2 com o texto About Pokédex', () => {
@@ -13,7 +10,7 @@ describe('Teste se a página contém as informações sobre a Pokédex', () => {
   });
   test('Se a página contém dois parágrafos com texto sobre a Pokédex.', () => {
     render(<About />);
-    const p = screen.getAllByTestId('paragraph');
+    const p = screen.getAllByText(/Pokémons/i);
     expect(p).toHaveLength(2);
   });
   test('Se a página contém a seguinte imagem de uma Pokédex', () => {
