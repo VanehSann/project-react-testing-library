@@ -6,13 +6,6 @@ import About from '../components/About';
 // import renderWithRouter from '../renderWithRouter';
 
 describe('Teste se a página contém as informações sobre a Pokédex', () => {
-  // test('Se a página contém as informações sobre a Pokédex.', () => {
-  //   render(<About />);
-  //   const contem = screen.getByRole('heading', { name: 'About Pokédex' });
-  //   expect(h2).toBeInTheDocument();
-  //   const p = screen.getAllByTestId('paragraph');
-  //   expect(p).toHaveLength(2);
-  // });
   test('Se a página contém um heading h2 com o texto About Pokédex', () => {
     render(<About />);
     const h2 = screen.getByRole('heading', { name: 'About Pokédex' });
