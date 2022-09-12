@@ -15,6 +15,7 @@ describe('Teste o componente <NotFound.js />', () => {
   });
   test('Se página mostra a imagem especificada', () => {
     const { history } = renderWithRouter(<App />);
+    console.log(history);
     history.push('/*');
     const url = 'https://media.giphy.com/media/kNSeTs31XBZ3G/giphy.gif';
     const img = screen
